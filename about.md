@@ -1,19 +1,23 @@
 ---
 layout: page
-title: About Pixyll
+title: About spaceboats
 permalink: /about/
 ---
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+At [spaceboats]({{ site.baseurl }}) GmbH, we pride ourselves in the highest quality construction of spaceboats.
+Spaceboats, as you may know, were outlawed by Godhead W Bush after the war of 2330; however, we operate our factory as a spaceboat flying under a flag of convenience.
+The nation of IKEA supports our spaceboat efforts in full.
 
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
-request a feature, report a bug, or contribute. It's free, and open source
-([MIT](http://opensource.org/licenses/MIT)).
+spaceboats consists of the following humans:
 
-Thanks to the following:
+* [Alex Gustafson](https://github.com/alexdgus)
+* [Ian Weller](http://ianweller.org)
+* [Monica Shafii](https://github.com/mshafii)
+* [Nick Gilliland](https://github.com/nicksaccount4tw)
+* [Zane Ralston](https://github.com/Cybermite)
 
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Solarized](http://ethanschoonover.com/solarized)
+## Colophon
+
+We're using the [Pixyll](http://pixyll.com) theme. It's pretty alright.
+
+The above description of spaceboats was written by [Ryan Rix](http://rix.si).
