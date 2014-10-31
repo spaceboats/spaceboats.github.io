@@ -8,7 +8,7 @@ summary:    Let's spend some money and build something neat.
 
 Our group's main project, busbus --- a common interface for live transit data
 from any agency (more details and our full project proposal here next week) ---
-felt like it needs some interesting applications of the software.
+seems like it needs some interesting applications of the software.
 
 From what I can tell, the standard CS capstone project here at KU is usually
 something with a end-user or consumer focus. We're taking a bit of a different
