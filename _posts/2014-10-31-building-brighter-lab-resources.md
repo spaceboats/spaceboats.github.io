@@ -6,7 +6,7 @@ date:       2014-10-31 15:30
 summary:    Let's spend some money and build something neat.
 ---
 
-Our group's main project, busbus --- an common interface for live transit data
+Our group's main project, busbus --- a common interface for live transit data
 from any agency (more details and our full project proposal here next week) ---
 felt like it needs some interesting applications of the software.
 
