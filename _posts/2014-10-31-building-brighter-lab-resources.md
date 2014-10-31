@@ -33,9 +33,9 @@ next two arrivals (or so).
 [muni-led]: http://coldattic.info/shvedsky/pro/blogs/a-foo-walks-into-a-bar/posts/98
 
 We were initially going to be quite lazy and just buy the LED board Pavel used,
-but it was out of stock at the time, and [Andy][andy] thought it might be a good
-idea to have something to show in the lab before the event held last night,
-honoring [Dr. Min Kao's gift to the School of Engineering][endowment-kao].
+but it was out of stock at the time, and [Prof. Gill][andy] thought it might be
+a good idea to have something to show in the lab before the event held last
+night, honoring [Dr. Min Kao's gift to the School of Engineering][endowment-kao].
 
 [andy]: https://ku-fpg.github.io/people/andygill/
 [endowment-kao]: http://www.kuendowment.org/s/1312/endowment/news.aspx?sid=1312&gid=1&pgid=1713&cid=3361&ecid=3361&crid=0&calpgid=15&calcid=3341
