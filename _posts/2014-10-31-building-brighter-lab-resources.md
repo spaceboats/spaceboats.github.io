@@ -15,12 +15,10 @@ something with a end-user or consumer focus. We're taking a bit of a different
 route by focusing on developers... but how do you present that to a boss,
 investor, or more importantly, someone who's going to give you a grade?
 
-The end goal --- which, once again, we'll post our full proposal and some notes
-about it here as soon as that's written --- is to build this API, and then build
-cool things *with* it. Something tangible, and more importantly, something most
-people can start using. In our mind from the beginning of the project was an LED
-board that told you when the next bus was going to arrive at the stops near
-Eaton Hall.
+The end goal is to build this API, and then build cool things *with* it.
+Something tangible, and more importantly, something most people can start
+using. In our mind from the beginning of the project was an LED board that told
+you when the next bus was going to arrive at the stops near Eaton Hall.
 
 So we built that LED board.
 
