@@ -50,7 +50,12 @@ At this point we have created a solid framework for getting data from the server
 
 [busbus_web_app]: https://github.com/spaceboats/busbus-web-sample
 
-TODO: Fill this section
+To demonstrate the ability to focus on applications versus APIs when using busbus, we have been working on a web app 
+that aggregates transit data and streams it to the screen. The web application uses a Flask framework, Python for the 
+server side, JQuery for the client side, and HTML/CSS formatting. It currently has a ‘home’ link to the busbus 
+repository on GitHub, and a ‘datastream’ link which displays current arrivals in Lawrence by bus route, stop name, 
+and headsign. The datastream refreshes every five seconds. Future plans are to implement a way for the user to 
+control the data displayed by choosing specific parameters to base their search on.
 
 ### [LED board][led_board]
 
