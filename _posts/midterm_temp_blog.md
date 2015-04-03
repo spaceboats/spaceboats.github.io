@@ -2,7 +2,7 @@
 layout:     post
 title:      Blag post title
 author:     Zane Ralston
-date:       2015-04-02 16:00
+date:       2015-04-03 16:00
 summary:    Work is getting done.
 ---
  
