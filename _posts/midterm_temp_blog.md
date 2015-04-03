@@ -22,7 +22,7 @@ application to showcase how to use busbus. This lead us to choosing the three
 applications that are most likely going to be made with this platform. An 
 android app, a web application, and a LED board.
 
-## Android app
+### Android app
 
 No one in the group had any experience with android development, so there was 
 a learning curve. After a few weeks, we started to gain the appropriate 
@@ -32,7 +32,7 @@ android knowledge, we elected to only support android 5 for our app. Android 5
 introduced many new libraries, including one that we used called 
 [RecyclerView][rc_view]. 
 Google introduced the [material design specifications][mat_design] with 
-Android 5 as well. This sepcification is designed to help developers pick 
+Android 5 as well. This specification is designed to help developers make 
 good design decisions when creating animation and color schemes. We wanted 
 to mock what a real android developer would be doing, so we made sure to 
 follow these specifications.
@@ -42,10 +42,10 @@ follow these specifications.
 
 TODO: Finish this section
 
-## Web application
+### Web application
 
 TODO: Fill this section
 
-## LED board
+### LED board
 
 TODO: Fill this section
