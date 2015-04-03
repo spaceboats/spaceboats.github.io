@@ -42,9 +42,9 @@ follow these specifications.
 [rc_view]: https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html
 [mat_design]: http://www.google.com/design/spec/material-design/introduction.html#
 
-So far we have been able to make Http requests to the server in order to retrieve routes, stops, and arrivals. These items are then displayed in the RecyclerView list that was mentioned above. While trying to figure out the ways to retrieve and display these items we were able to learn a lot about what works best for developers who want to use our API.
+So far we have been able to make Http requests to the server in order to retrieve routes, stops, and arrivals. These items are then displayed in the RecyclerView list that was mentioned above. While trying to figure out the best ways to retrieve and display these items we were able to learn a lot about what works best for developers who want to use our API.
 
-At this point we have created a solid framework for getting data from the server and are shifting focus to creating an intuitive user interface. Many current transit apps require multiple clicks to get to things that should be available when the app opens. For example, if a user takes the same route every day from the same stop, it shouldn't take 5 clicks in order to get the next stop time for their route at their stop. In order to make this more easily accessible, we are making use of favorites. We will also be using GPS location to display the closest stops on a map.
+At this point we have created a solid framework for getting data from the server and are shifting focus to creating an intuitive user interface. Many current transit apps require multiple clicks to get to things that should be available when the app opens. For example, if a user takes the same route every day from the same stop, it shouldn't take 5 clicks in order to get the next stop time for their route at their stop. In order to make this more easily accessible, we are making use of favorites. We will also be using GPS location to display the closest stops on a map in the near future.
 
 ### [Web app][busbus_web_app]
 
