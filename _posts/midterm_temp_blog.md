@@ -22,7 +22,9 @@ application to showcase how to use busbus. This lead us to choosing the three
 applications that are most likely going to be made with this platform. An 
 android app, a web application, and a LED board.
 
-### Android app
+### [Android app][busbus_android]
+
+[busbus_android]: https://github.com/spaceboats/busbus-android
 
 No one in the group had any experience with android development, so there was 
 a learning curve. After a few weeks, we started to gain the appropriate 
@@ -42,10 +44,14 @@ follow these specifications.
 
 TODO: Finish this section
 
-### Web application
+### [Web app][busbus_web_app]
+
+[busbus_web_app]: https://github.com/spaceboats/busbus-web-sample
 
 TODO: Fill this section
 
-### LED board
+### [LED board][led_board]
+
+[led_board]: https://github.com/spaceboats/3001-ledboard
 
 TODO: Fill this section
