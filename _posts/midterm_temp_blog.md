@@ -54,7 +54,8 @@ transit apps require multiple clicks to get to things that should be available
 when the app opens. For example, if a user takes the same route every day from 
 the same stop, it shouldn't take 5 clicks in order to get the next stop time for 
 their route at their stop. In order to make this more easily accessible, we are 
-making use of favorites. We will also be using GPS location to display the 
+making use of favorites, by using a SQLite database stored on the device. After 
+we receive a google api key, we will be using GPS location to display the 
 closest stops on a map in the near future.
 
 ### [Web app][busbus_web_app]
