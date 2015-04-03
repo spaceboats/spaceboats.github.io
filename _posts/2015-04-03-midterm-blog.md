@@ -44,18 +44,25 @@ follow these specifications.
 
 So far we have been able to make Http requests to the server in order to 
 retrieve routes, stops, and arrivals. These items are then displayed in the 
-RecyclerView list that was mentioned above. While trying to figure out the best
-ways to retrieve and display these items we were able to learn a lot about what 
-works best for developers who want to use our API.
+RecyclerView list that was mentioned above. 
+
+![RecyclerView items](/assets{{ page.id }}/android_routes.png)
+
+While trying to figure out the best ways to retrieve and display these items, 
+we were able to learn a lot about what works best for developers who want to 
+use our API.
 
 At this point we have created a solid framework for getting data from the server 
 and are shifting focus to creating an intuitive user interface. Many current 
 transit apps require multiple clicks to get to things that should be available 
 when the app opens. For example, if a user takes the same route every day from 
-the same stop, it shouldn't take 5 clicks in order to get the next stop time for 
+the same stop, it should not take 5 clicks in order to get the next stop time for 
 their route at their stop. In order to make this more easily accessible, we are 
-making use of favorites, by using a SQLite database stored on the device. After 
-we receive a google api key, we will be using GPS location to display the 
+making use of favorites, by using a SQLite database stored on the device. 
+
+![Favorites](/assets{{ page.id }}/android_favorites.png)
+
+After we receive a google api key, we will be using GPS location to display the 
 closest stops on a map in the near future.
 
 ### [Web app][busbus_web_app]
@@ -68,9 +75,13 @@ streams it to the screen. The web application uses a Flask framework, Python for
 the server side, JQuery for the client side, and HTML/CSS formatting. It 
 currently has a `home` link to the busbus repository on GitHub, and a 
 `datastream` link which displays current arrivals in Lawrence by bus route, 
-stop name, and headsign. The datastream refreshes every five seconds. Future 
-plans are to implement a way for the user to control the data displayed by 
-choosing specific parameters to base their search on.
+stop name, and headsign. 
+
+![Website datastream](/assets{{ page.id }}/web_datastream.png)
+
+The datastream refreshes every five seconds. Future plans are to implement 
+a way for the user to control the data displayed by choosing specific parameters 
+to base their search on. For example, only showing route 29 data.
 
 ### [LED board][led_board]
 
