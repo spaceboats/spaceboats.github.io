@@ -87,7 +87,7 @@ to base their search on. For example, only showing route 29 data.
 
 [led_board]: https://github.com/spaceboats/3001-ledboard
 
-After getting the initial led board set up with controller code, we have not 
+After setting up the led board set up with controller code, we have not 
 touched it much since. We figured that the other two applications were more 
 important to the developers that would be using the API, so we focused on 
 integrating busbus into those first. We do have the led board working 
