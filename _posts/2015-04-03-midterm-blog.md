@@ -51,7 +51,7 @@ section) but that will work much better as [fixing the README][issue_5].
 
 [issue_5]: https://github.com/spaceboats/busbus/issues/5
 
-## busbus web ?
+## busbus web
 
 On the other hand, the web interface for busbus is pretty much done (not merged
 into master yet because of a lack of tests, but once that's done we're ready to
@@ -147,6 +147,6 @@ the same http request used in the other two apps to retrieve bus data for the
 led board.
 
 We have already written a blog post on what we have done on the LED board. 
-It can be found [here][led_blog]
+It can be found [here][led_blog].
 
 [led_blog]: http://spaceboats.github.io/2014/10/31/building-brighter-lab-resources/
