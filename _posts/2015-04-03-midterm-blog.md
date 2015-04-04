@@ -59,6 +59,10 @@ when the app opens. For example, if a user takes the same route every day from
 the same stop, it should not take 5 clicks in order to get the next stop time for 
 their route at their stop. In order to make this more easily accessible, we are 
 making use of favorites, by using a SQLite database stored on the device. 
+Whenever a user navigates to the favorites page, it will take the route ids and
+stop ids from the database and query the busbus web server for when the next time 
+this route will be at this stop. This happens for all favorites and is displayed 
+like below.
 
 ![Favorites](/assets{{ page.id }}/android_favorites.png)
 
