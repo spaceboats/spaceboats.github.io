@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      The state of the busbus, April 2015
-author:     Zane Ralston & Ian Weller
+author:     Zane Ralston & Ian Weller & Alex Gustafson & Nick Gilliland & Monica Shafii 
 date:       2015-04-03 16:00
 summary:    Work is getting done.
 ---
@@ -81,7 +81,7 @@ android knowledge, we elected to only support android 5 for our app. Android 5
 introduced many new libraries, including one that we used called 
 [RecyclerView][rc_view]. 
 Google introduced the [material design specifications][mat_design] with 
-Android 5 as well. This specification is designed to help developers make 
+android 5 as well. This specification is designed to help developers make 
 good design decisions when creating animation and color schemes. We wanted 
 to mock what a real android developer would be doing, so we made sure to 
 follow these specifications.
