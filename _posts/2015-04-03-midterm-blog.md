@@ -6,7 +6,7 @@ date:       2015-04-03 16:00
 summary:    Work is getting done.
 ---
  
-## busbus core
+## [busbus core](https://github.com/spaceboats/busbus)
  
 In September, we envisioned busbus as an interface for accessing transit data
 without rewriting code for new agencies. That's our main story driving what
