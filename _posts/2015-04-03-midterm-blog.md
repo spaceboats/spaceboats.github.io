@@ -1,18 +1,65 @@
 ---
 layout:     post
-title:      Blag post title
-author:     Zane Ralston
+title:      The state of the busbus, April 2015
+author:     Zane Ralston & Ian Weller
 date:       2015-04-03 16:00
 summary:    Work is getting done.
 ---
  
 ## busbus core
  
-TODO: Fill this section
+In September, we envisioned busbus as an interface for accessing transit data
+without rewriting code for new agencies. That's our main story driving what
+we're calling "busbus core", the Python interface we're creating, and we think
+we can complete that before the end of the semester at KU (about six weeks out
+from now).
+
+We're currently quite a bit behind. Three months ago [we stated][midterm_plans]
+we'd have 10 transit agencies, with the hope that at least one of them had live
+data.
+
+[midterm_plans]: https://github.com/ku-eecs-capstone/blackboard/wiki/busbus#midterm-plans
+
+Right now, the only code we have actually working is importing the GTFS feed
+for Lawrence, KS. Current code on the master branch has an infinite loop trying
+to read the MBTA feed (Boston, MA) and crashes trying to read the KCATA feed
+(Kansas City).
+
+But hey, Lawrence's GTFS feed reads fine and has minimal memory usage. I do not
+imagine this will be the case for larger agencies (or agencies that don't use
+``frequencies.txt``).
+
+So here's the plan for the next six weeks:
+
+- Start storing GTFS data in a SQLite database cache, instead of just caching
+  the GTFS ZIP files. If done right this should improve busbus's memory
+  footprint as well as make certain queries faster.
+- Debug what's wrong with reading our current focus GTFS feeds.
+- Start getting realtime data for services that provide open data feeds.
+- Get a setuptools entry point working so that users can ``pip install``
+  providers not available in busbus core (providers that aren't open data, for
+  instance).
+
+Our initial plans were to have gevent (or the like) available to subscribe to
+events, for instance, estimated arrival time updates for arrivals. We may not
+get the chance to do this before the end of the semester, but it's something I
+intend to write this summer.
+
+As I (Ian) tend to do, I'm writing this post at the last possible minute. I
+could put samples of using the API in Python (as well as via HTTP in the next
+section) but that will work much better as [fixing the README][issue_5].
+
+[issue_5]: https://github.com/spaceboats/busbus/issues/5
 
 ## busbus web ?
 
-TODO: Fill this section
+On the other hand, the web interface for busbus is pretty much done (not merged
+into master yet because of a lack of tests, but once that's done we're ready to
+go).
+
+The remaining challenge is hooking up a WebSocket to the gevent system, as
+mentioned above, but because I've likely cut that for end-of-semester release,
+it's not a challenge for the end of the semester.
 
 ## Applications
 
