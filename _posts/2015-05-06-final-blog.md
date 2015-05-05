@@ -3,7 +3,7 @@ layout:     post
 title:      busbus Is Now a Thing, May 2015
 author:     Nick Gilliland, Alex Gustafson, Zane Ralston, Monica Shafii & Ian Weller
 date:       2015-05-06 16:00
-summary:    Work is getting done.
+summary:    busbus is bussing bus data
 ---
 
 We have put a lot of work into busbus since our last blog post and are proud to
@@ -193,7 +193,9 @@ Specific to our project, we are using the board to display upcoming bus
 arrivals for the stops around the Engineering building. This serves as a good
 example of how to make simple http calls to the busbus web API.
 
-TODO ADD IMAGE WITH ARRIVAL INFO
+<video autoplay loop controls style="display:block; margin-left:auto; margin-right:auto; width: 50%;">
+    <source src="/assets/{{ page.id }}/ledboardvideo.mp4" type="video/mp4">
+</video>
 
 [led_blog]: http://spaceboats.github.io/2014/10/31/building-brighter-lab-resources/
 [led_webapp]: http://3001-ledboard.spaceboats.net/
