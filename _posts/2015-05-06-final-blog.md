@@ -169,16 +169,16 @@ goals they set out to accomplish with the project.
 
 Since our last blog post, we have completely rewritten the code for the LED
 board using Node.js. Our [previous implementation][led_blog] was... interesting.
-It had a Python web interface that ran a c++ board controller. We decided that
+It had a Python web interface that ran a C++ board controller. We decided that
 this was kind of a weird solution and it was difficult to prototype new
 features because it took so long to compile.  We decided we could come up with
 something better and found that a bunch of the libraries we had been using had
 been ported to Node.js. Since we already had some experience with Node from the
-labs at the beginning of the year, we figured that it would be better option.
-After rewriting everything in Node, we now have much more sensible solution.
+labs at the beginning of the year, we figured that it would be a better option.
+After rewriting everything in Node, we now have a much more sensible solution.
 The main feature is what we call a state queue. Each state is a scene that is
 displayed on the board. The state queue has add and remove features that can be
-accessed by the web API, [documented here][led_github](sorta). As of right now,
+accessed by the web API, [documented here][led_github] (sorta). As of right now,
 the only supported state is text, but we plan to add support for images as well
 as more advanced text layouts by the end of the semester. We also have a web
 app that allows users to add and remove text states. This web app is available
