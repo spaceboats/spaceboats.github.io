@@ -161,6 +161,7 @@ example of how to make simple http calls to the busbus web API.
 
 <video autoplay loop controls style="display:block; margin-left:auto; margin-right:auto; width: 50%;">
     <source src="/assets/{{ page.id }}/ledboardvideo.mp4" type="video/mp4">
+    <source src="/assets/{{ page.id }}/ledboardvideo.webm" type="video/webm">
 </video>
 
 [led_blog]: http://spaceboats.github.io/2014/10/31/building-brighter-lab-resources/
