@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      busbus Is Now a Thing, May 2015
+title:      busbus is Now A Thing
 author:     Nick Gilliland, Alex Gustafson, Zane Ralston, Monica Shafii & Ian Weller
 date:       2015-05-06 16:00
 summary:    We've released busbus 0.1.0.
@@ -49,31 +49,29 @@ platform. Our end users are developers, so we needed some kind of real world
 application to showcase how to use busbus. This lead us to choosing the three
 applications that are most likely going to be made with this platform. An
 android app, a web application, and a LED board. In all honesty, we probably
-spent too much time on these and not enough time on busbus-core, but the
+spent too much time on these and not enough time on busbus core, but the
 applications were the fun part!
 
 ### [Android app][busbus_android]
 
 [busbus_android]: https://github.com/spaceboats/busbus-android
 
-In our last blog post, we talked about how we were able to make http requests
+In our last blog post, we talked about how we were able to make HTTP requests
 to the busbus web API for static data. Since then we have been able to use the
 Android Location Services to get GPS location from the phone.  Using this
 location, we allow users to get stops closest to the user. Using busbus, this
 is easy with the following request:
 
-http://fake-hosted-busbus.com/stops/find?latitude=xx.xx&longitude=xx.xx&distance=500
+`http://fake-hosted-busbus.com/stops/find?latitude=xx.xx&longitude=xx.xx&distance=500`
 
-Which will get all stops withing 500 meters of the given location. 
+which will get all stops withing 500 meters of the given location.
 
 Once busbus realtime for MBTA was added, we were able to get realtime data on
 the Android app.  The great part about this is that we didn't have to change
 ANY API requests. In order to get only static data, the only thing that needs to be
-added to the request is "realtime=False".
+added to the request is `realtime=False`.
 
 Enough talking about it, here is the app in action:
-
-TODO update with new video
 
 <video autoplay loop controls style="display:block; margin-left:auto; margin-right:auto; width: 50%;">
     <source src="/assets/{{ page.id }}/androiddemo.mp4" type="video/mp4">
@@ -95,18 +93,18 @@ stable Android apps because we saw a lot of this...
 Nick and Monica have continued working on a web app to demonstrate how focus
 can be placed on building the application rather than the process of retrieving
 data from different transit agencies on the back end. The web application uses
-a Flask framework, Python for the server side, JQuery for the client side, and
-HTML/CSS formatting. It currently has a ‘home’ link linking to the busbus
-repository on GitHub, a ‘datastream’ link, and a ‘search’ link.
+a Flask framework, Python for the server side, jQuery for the client side, and
+HTML/CSS formatting. It currently has a "home" link linking to the busbus
+repository on GitHub, a "datastream" link, and a "search" link.
 
 <img src="/assets/{{page.id}}/web_homepage.jpg" alt="Web-sample Homepage" style="display:block; margin-left:auto; margin-right:auto; width: 100%;"/>
 
-The ‘datastream’ link displays current arrivals in Lawrence, KS by bus route,
+The "datastream" link displays current arrivals in Lawrence, KS by bus route,
 stop name, and headsign, and refreshes every five seconds. This was
 accomplished by querying busbus for arrivals based on the Lawrence Transit
 provider id and a start and end time as parameters. The data is then placed in
 a table which appears on the screen, and the whole function is ran again after
-a timeout on a continuous loop to ‘stream’ the data.
+a timeout on a continuous loop to "stream" the data.
 
 <img src="/assets/{{page.id}}/web_datastream.jpg" alt="Web-sample Datastream" style="display:block; margin-left:auto; margin-right:auto; width: 100%;"/>
 
@@ -137,11 +135,14 @@ Since our last blog post, we have completely rewritten the code for the LED
 board using Node.js. Our [previous implementation][led_blog] was... interesting.
 It had a Python web interface that ran a C++ board controller. We decided that
 this was kind of a weird solution and it was difficult to prototype new
-features because it took so long to compile.  We decided we could come up with
+features because it took so long to compile.
+
+We decided we could come up with
 something better and found that a bunch of the libraries we had been using had
 been ported to Node.js. Since we already had some experience with Node from the
 labs at the beginning of the year, we figured that it would be a better option.
 After rewriting everything in Node, we now have a much more sensible solution.
+
 The main feature is what we call a state queue. Each state is a scene that is
 displayed on the board. The state queue has add and remove features that can be
 accessed by the web API, [documented here][led_github] (sorta). As of right now,
@@ -168,13 +169,17 @@ example of how to make simple http calls to the busbus web API.
 [led_webapp]: http://3001-ledboard.spaceboats.net/
 [led_github]: http://github.com/spaceboats/3001-ledboard/
 
-## Can busbus Continue Being a Thing?
+## The next stop is...
 
-The semester is nearing a close and we are about to be done working on busbus
-for senior design. Our hope is that busbus continues to be a thing, and maybe
-even grows into a somewhat widely used thing that supports transit agencies
-around the world. All of the code is open source so anyone interested in
-pitching in is welcome.  Find more infomormation on our [github group
+busbus does not go out of service here.
+
+Finishing this blog post is essentially our last action for EECS 581/582 at KU,
+but it's our intent to continue developing busbus as an open source project.
+We're going to be hard at work adding new providers and making sure busbus
+works for people interested in transit data.
+
+All of the code in our repos is open source so anyone interested in
+pitching in is welcome.  Find more information on our [GitHub organization
 page][spaceboats_github].
 
 [spaceboats_github]: https://github.com/spaceboats/
