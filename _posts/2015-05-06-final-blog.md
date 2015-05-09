@@ -77,6 +77,7 @@ TODO update with new video
 
 <video autoplay loop controls style="display:block; margin-left:auto; margin-right:auto; width: 50%;">
     <source src="/assets/{{ page.id }}/androiddemo.mp4" type="video/mp4">
+    <source src="/assets/{{ page.id }}/androiddemo.webm" type="video/webm">
 </video>
 
 So what did we learn from writing the Android app? Well it helped us figure out
